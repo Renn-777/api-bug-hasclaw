@@ -10,6 +10,7 @@ const tokens = config.tokens;
 const bot = new Telegraf(tokens);
 const axios = require("axios");
 const OwnerId = config.owner;
+const sessions = new Map();
 const sessions_dir = "./sessions";
 const file_session = "./active.json";
 const express = require('express');
